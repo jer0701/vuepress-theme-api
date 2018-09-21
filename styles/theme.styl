@@ -7,3 +7,29 @@
 @import './_components/_nprogress'
 @import './_components/_code'
 @import './_components/_block'
+
+.navbar
+  position fixed
+  z-index 20
+  top 0
+  left 0
+  right 0
+  height $navbarHeight
+  background-color #fff
+  box-sizing border-box
+  border-bottom 1px solid $borderColor
+
+.sidebar-mask
+  position fixed
+  z-index 9
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  display none
+
+.content-block__cont, .content-block__examples
+    padding: 0 3rem 0
+
+.content-block__examples
+    padding-bottom: 60px

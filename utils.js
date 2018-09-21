@@ -120,12 +120,6 @@ export function resolveSidebarItems($page, $site, $localePath) {
     })
     .forEach(item => {
       if (isHomePage(item.path, $localePath)) {
-        sidebars['home'] = {
-          title: 'Homepage',
-          to: item.path,
-          children: [],
-        }
-
         return
       }
 
@@ -236,4 +230,10 @@ export function localizePath(path, localeBase) {
     : normalize(localeBase + path)
 
   return padTrailingSlash(result)
+}
+
+export function resolveNavLinkItem (linkItem) {
+  return Object.assign(linkItem, {
+    type: linkItem.items && linkItem.items.length ? 'links' : 'link'
+  })
 }

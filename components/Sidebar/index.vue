@@ -114,15 +114,16 @@ export default {
 
 .sidebar
   position: fixed
-  top: 0
+  top: 3.6rem
   bottom: 0
   width: 100%
-  padding-top: 3rem
   overflow: auto
   background: $white
 
 .group
   margin-bottom: 4rem
+  &:first-child
+    margin-top: 20px
 
   &__title
     padding-left: 30px

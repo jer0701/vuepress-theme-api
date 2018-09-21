@@ -189,7 +189,7 @@ export default {
 
 .page--block-layout
   .content__footer-container
-    margin: 0 -3rem
+    margin: 0 -6rem
     background-color: #000
 
   .content__footer
@@ -200,6 +200,9 @@ export default {
 .content-block
   margin: -4rem -6rem 4rem
   background-color: $black
+
+  .content-block__heading
+    padding: 1rem 3rem 0;
 
   &:last-child
     margin-bottom: 0
