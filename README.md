@@ -1,4 +1,4 @@
-# vuepress-theme-api
+# vuepress-theme-feie-api
 
 [![npm](https://img.shields.io/npm/v/vuepress-theme-feie-api.svg)](https://www.npmjs.com/package/vuepress-theme-feie-api)
 [![npm](https://img.shields.io/npm/l/vuepress-theme-feie-api.svg)](https://github.com/neoption/vuepress-theme-api/blob/master/LICENSE)
