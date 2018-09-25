@@ -3,7 +3,7 @@
   "description": "A api-friendly theme for VuePress.",
   "version": "0.2.1",
   "author": "caikeal <caikeal@qq.com>",
-  "homepage": "https://github.com/sqrthree/vuepress-theme-api#readme",
+  "homepage": "https://github.com/neoption/vuepress-theme-api#readme",
   "keywords": [
     "vuepress",
     "vuepress-theme",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sqrthree/vuepress-theme-api.git"
+    "url": "git+https://github.com/neoption/vuepress-theme-api.git"
   },
   "bugs": {
-    "url": "https://github.com/sqrthree/vuepress-theme-api/issues"
+    "url": "https://github.com/neoption/vuepress-theme-api/issues"
   },
   "directories": {
     "doc": "docs"
