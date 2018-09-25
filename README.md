@@ -1,10 +1,10 @@
 # vuepress-theme-api
 
-[![npm](https://img.shields.io/npm/v/vuepress-theme-api.svg)](https://www.npmjs.com/package/vuepress-theme-api)
-[![npm](https://img.shields.io/npm/l/vuepress-theme-api.svg)](https://github.com/sqrthree/vuepress-theme-api/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/vuepress-theme-feie-api.svg)](https://www.npmjs.com/package/vuepress-theme-feie-api)
+[![npm](https://img.shields.io/npm/l/vuepress-theme-feie-api.svg)](https://github.com/neoption/vuepress-theme-api/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-> 📦 📝 🎨 A api-friendly theme for VuePress. Inspired by [zeit](https://zeit.co/docs).
+> 📦 📝 🎨 A api-friendly theme for VuePress. Inspired by [zeit](https://zeit.co/docs). A fork of sqrtthree/vuepress-theme-api.
 
 [Live demo](https://blog.sqrtthree.com/vuepress-theme-api/)
 
@@ -70,6 +70,7 @@ A out-of-the-box starter kit for RESTful API document is [here](https://github.c
 
 ---
 
+Thanks For:
 > [sqrtthree.com](http://sqrtthree.com/) &nbsp;&middot;&nbsp;
 > GitHub [@sqrthree](https://github.com/sqrthree) &nbsp;&middot;&nbsp;
 > Twitter [@sqrtthree](https://twitter.com/sqrtthree)
