@@ -174,6 +174,10 @@ export default {
     border-radius 6px
     padding 0.4rem
     list-style-type none
+    list-style none
+    li
+      list-style-type none
+      list-style none
     &.align-right
       right 0
   .suggestion

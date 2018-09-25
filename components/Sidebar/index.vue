@@ -135,9 +135,14 @@ export default {
     color: #888
 
 .category
-  a,
-  a:hover
+  a
     color: $black
+
+  a:hover
+    color: $sidebar-active
+
+  a.router-link-exact-active.router-link-active
+    color: $sidebar-active
 
   &__label,
   &__header-item
@@ -160,10 +165,13 @@ export default {
     & ^[0]__headers
       display: block
 
+  &--selected &__label a
+    color: $sidebar-active
+
   &--active &__label,
   &--active&__headers
       font-weight: 600
-      border-color: $black
+      border-color: $sidebar-active
 
   &__header-item
     padding-left: 30px
