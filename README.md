@@ -43,7 +43,7 @@ Create VuePress config file `.vuepress/config.js` and provide a `theme` option.
 module.exports = {
   title: 'Hello, World.',
   description: '📦 🎨 A api-friendly theme for VuePress.',
-  theme: 'api',
+  theme: 'feie-api',
 }
 ```
 
