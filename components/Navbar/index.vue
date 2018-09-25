@@ -10,14 +10,14 @@
         class="logo"
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
+        :alt="$site.themeConfig.logoText"
       >
       <span
         ref="siteName"
         class="site-name"
-        v-if="$siteTitle"
+        v-if="$site.themeConfig.logoText"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
+      >{{ $site.themeConfig.logoText ? $site.themeConfig.logoText : $siteTitle }}</span>
     </router-link>
 
     <div
