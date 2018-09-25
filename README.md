@@ -31,7 +31,7 @@ There are some global dependencies you need to set up.
 yarn global add vuepress # OR npm install -g vuepress
 
 # Install theme
-yarn global add vuepress-theme-api # OR npm install -g vuepress-theme-api
+yarn global add vuepress-theme-feie-api # OR npm install -g vuepress-theme-feie-api
 ```
 
 ### Configuration
