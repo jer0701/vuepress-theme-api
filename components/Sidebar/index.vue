@@ -14,7 +14,7 @@
           }
         ]">
           <div class="category__label">
-            <NavLink :to="sidebarGroupItem.to">{{ title(sidebarGroupItem.title || sidebarGroupOrder[index]) }}</NavLink>
+            <SidebarLink :to="sidebarGroupItem.to">{{ title(sidebarGroupItem.title || sidebarGroupOrder[index]) }}</SidebarLink>
           </div>
         </div>
 
@@ -28,7 +28,7 @@
           }
         ]">
           <div class="category__label">
-            <NavLink :to="`${sidebarGroupItem.to}#${header.slug}`">{{ title(header.title) }}</NavLink>
+            <SidebarLink :to="`${sidebarGroupItem.to}#${header.slug}`">{{ title(header.title) }}</SidebarLink>
           </div>
         </div>
 
@@ -42,7 +42,7 @@
           }
         ]">
           <div class="category__label">
-            <NavLink :to="child.to">{{ title(child.title) }}</NavLink>
+            <SidebarLink :to="child.to">{{ title(child.title) }}</SidebarLink>
           </div>
           <div v-if="child.headers && child.headers.length" v-for="header in child.headers" :class="[
             'category__headers',
@@ -51,7 +51,7 @@
             }
           ]">
             <div class="category__header-item">
-              <NavLink :to="`${child.to}#${header.slug}`">{{ title(header.title) }}</NavLink>
+              <SidebarLink :to="`${child.to}#${header.slug}`">{{ title(header.title) }}</SidebarLink>
             </div>
           </div>
         </div>
@@ -63,12 +63,12 @@
 <script>
 import config from '../../config'
 import { title } from '../../utils'
-import NavLink from '../NavLink'
+import SidebarLink from '../SidebarLink'
 
 export default {
   name: 'Sidebar',
   components: {
-    NavLink,
+    SidebarLink,
   },
   props: {
     items: {
@@ -84,12 +84,8 @@ export default {
         this.$localePath
       )
 
-      const languageSelectText = config.get(this.$site, 'selectText', this.$localePath) || 'languages'
-
       if (groupOrderConfig) {
         const result = groupOrderConfig.slice()
-
-        result.unshift(languageSelectText, 'home')
 
         return result
       } else {

@@ -1,5 +1,15 @@
 import config from './config'
 
+export const hashRE = /#.*$/
+export const extRE = /\.(md|html)$/
+export const endingSlashRE = /\/$/
+
+export function basePath (path) {
+  return decodeURI(path)
+    .replace(hashRE, '')
+    .replace(extRE, '')
+}
+
 const isHomePage = (path, base) => {
   return path === base
 }
@@ -236,4 +246,26 @@ export function resolveNavLinkItem (linkItem) {
   return Object.assign(linkItem, {
     type: linkItem.items && linkItem.items.length ? 'links' : 'link'
   })
+}
+
+export function isMailto (path) {
+  return /^mailto:/.test(path)
+}
+
+export function isTel (path) {
+  return /^tel:/.test(path)
+}
+
+export function ensureExt (path) {
+  if (isExternalLink(path)) {
+    return path
+  }
+  const hashMatch = path.match(hashRE)
+  const hash = hashMatch ? hashMatch[0] : ''
+  const normalized = basePath(path)
+
+  if (endingSlashRE.test(normalized)) {
+    return path
+  }
+  return normalized + '.html' + hash
 }
