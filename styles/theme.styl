@@ -60,38 +60,36 @@
 .content code 
   color #b93d6a
 
-table, th, td 
+.content table, th, td 
 	border none
-	border-block-start 1px solid #eaeaea
-  border-block-end 1px solid #eaeaea
+	border-top 1px solid #eaeaea
+  &:last-child
+    border-bottom 1px solid #eaeaea
 
-table tr td:first-child, table tr th:first-child
+.content table tr td:first-child, table tr th:first-child
   width: 150px
 
-table tr td:first-child code 
+.content table tr td:first-child code 
 	color #939da3
   padding 0
   background none
 
-span.required 
+.content span.required 
   margin-right 4px
 
-span.required code
+.content span.required code
   color #939da3
   padding 0.2rem 0.4rem
 
-.navbar
-  padding 0.7rem 1.8rem
+.navbar a.home-link, .navbar span.home-link, .navbar img.home-link
+  display flex
+  align-items center
+  width 150px
 
-.navbar a, .navbar span, .navbar img
-    display flex
-    align-items center
-    width 150px
-
-.navbar .logo
+.navbar .home-link .logo
   flex 0 0 94px
 
-.navbar .site-name
+.navbar .home-link .site-name
   font-size 16px
   flex 0 0 auto
   display flex
@@ -100,9 +98,6 @@ span.required code
   height 26px
   border-left 1px solid rgba(56,69,88,0.1)
   font-weight 400
-
-.navbar a, .navbar span, .navbar img 
-  width 150px
 
 .group__title
   margin-top 46px

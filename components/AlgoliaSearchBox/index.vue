@@ -18,6 +18,12 @@ export default {
   },
   methods: {
     initialize (userOptions, lang) {
+      let facetFilters = [];
+      if (this.$site.themeConfig.algoliaLocale && this.$site.themeConfig.algoliaLocale == 'no-filter') {
+        facetFilters = [];
+      } else {
+        facetFilters = [`lang:${lang}`];
+      }
       Promise.all([
         import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.js'),
         import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.css')
@@ -31,7 +37,7 @@ export default {
             inputSelector: '#algolia-search-input',
             // #697 Make docsearch work well at i18n mode.
             algoliaOptions: Object.assign({
-              'facetFilters': [`lang:${lang}`].concat(algoliaOptions.facetFilters || [])
+              'facetFilters': facetFilters.concat(algoliaOptions.facetFilters || [])
             }, algoliaOptions)
           }
         ))

@@ -10,14 +10,14 @@
         class="logo"
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
-        :alt="$site.themeConfig.logoText"
+        :alt="logoText"
       >
       <span
         ref="siteName"
         class="site-name"
-        v-if="$site.themeConfig.logoText"
+        v-if="logoText"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $site.themeConfig.logoText ? $site.themeConfig.logoText : $siteTitle }}</span>
+      >{{ logoText }}</span>
     </router-link>
 
     <div
@@ -68,6 +68,9 @@ export default {
     },
     isAlgoliaSearch () {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    },
+    logoText () {
+      return this.$themeLocaleConfig.logoText || this.$site.themeConfig.logoText || this.$site.title
     }
   }
 }
