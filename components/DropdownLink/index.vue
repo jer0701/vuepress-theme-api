@@ -171,4 +171,7 @@ export default {
       border-radius 0.25rem
       white-space nowrap
       margin 0
+      li
+        list-style none
+        margin 0
 </style>
