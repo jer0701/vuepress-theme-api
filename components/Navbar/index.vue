@@ -90,6 +90,18 @@ $navbar-horizontal-padding = 1.5rem
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   position relative
+  &:before
+    box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.05);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-color: #fff;
+    transition: opacity 0.5s;
   a, span, img
     display inline-block
   .logo
