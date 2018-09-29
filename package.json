@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-feie-api",
   "description": "A api-friendly theme for VuePress.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "caikeal <caikeal@qq.com>",
   "homepage": "https://github.com/neoption/vuepress-theme-api#readme",
   "keywords": [
