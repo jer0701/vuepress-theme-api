@@ -3,7 +3,7 @@
     <div class="home__header">
       <h1 class="home__title">{{ title }}</h1>
       <p class="home__description">{{ description }}</p>
-      <Button :to="action.link">{{ action.text }}</Button>
+      <Button :link-info="action">{{ action.text }}</Button>
     </div>
     <div class="home__body row">
       <div class="home__content col-md-10">
