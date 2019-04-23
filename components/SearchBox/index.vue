@@ -6,6 +6,7 @@
       :value="query"
       :class="{ 'focused': focused }"
       autocomplete="off"
+      placeholder="搜索..."
       spellcheck="false"
       @focus="focused = true"
       @blur="focused = false"
@@ -150,18 +151,18 @@ export default {
   margin-right 1rem
   input
     cursor text
-    width 10rem
-    color lighten($textColor, 25%)
+    width 240px
+    color #202d40
     display inline-block
-    border 1px solid darken($borderColor, 10%)
-    border-radius 2rem
-    font-size 0.9rem
-    line-height 2rem
-    padding 0 0.5rem 0 2rem
+    border: 1px solid #dadfe6
+    border-radius 2px
+    font-size 12px
+    line-height 30px;
+    padding 0 0.5rem 0 10px
     outline none
     transition all .2s ease
-    background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
-    background-size 1rem
+    background #fff url(./search.svg) 216px 0.5rem no-repeat
+    background-size 0.8rem
     &:focus
       cursor auto
       border-color $accentColor

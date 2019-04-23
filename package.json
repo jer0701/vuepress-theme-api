@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-coding-api",
   "description": "A api-friendly theme for VuePress.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Zedd",
   "homepage": "https://github.com/neoption/vuepress-theme-api#readme",
   "keywords": [
