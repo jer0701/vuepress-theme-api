@@ -1,8 +1,4 @@
-# vuepress-theme-feie-api
-
-[![npm](https://img.shields.io/npm/v/vuepress-theme-feie-api.svg)](https://www.npmjs.com/package/vuepress-theme-feie-api)
-[![npm](https://img.shields.io/npm/l/vuepress-theme-feie-api.svg)](https://github.com/neoption/vuepress-theme-api/blob/master/LICENSE)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+# vuepress-theme-coding-api
 
 > 📦 📝 🎨 A api-friendly theme for VuePress. Inspired by [zeit](https://zeit.co/docs). A fork of sqrtthree/vuepress-theme-api.
 
@@ -31,7 +27,7 @@ There are some global dependencies you need to set up.
 yarn global add vuepress # OR npm install -g vuepress
 
 # Install theme
-yarn global add vuepress-theme-feie-api # OR npm install -g vuepress-theme-feie-api
+yarn global add vuepress-theme-coding-api # OR npm install -g vuepress-theme-coding-api
 ```
 
 ### Configuration
@@ -43,7 +39,7 @@ Create VuePress config file `.vuepress/config.js` and provide a `theme` option.
 module.exports = {
   title: 'Hello, World.',
   description: '📦 🎨 A api-friendly theme for VuePress.',
-  theme: 'feie-api',
+  theme: 'coding-api',
 }
 ```
 
