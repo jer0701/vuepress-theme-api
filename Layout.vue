@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     class="theme__container"
     :class="pageClasses"
     @touchstart="onTouchStart"
@@ -14,7 +14,7 @@
     ></div>
     <div class="row" v-if="shouldShowSidebar">
       <div class="col-md-2">
-        <Sidebar 
+        <Sidebar
             :items="sidebarItems"
             @toggle-sidebar="toggleSidebar">
           <slot name="sidebar-top" slot="top" />
@@ -35,6 +35,9 @@
       </div>
       <Home v-else-if="$page.frontmatter.home"/>
       <Page v-else></Page>
+    </div>
+    <div class="footer__layout" v-if="$page.frontmatter.footerLayout">
+      <component :is="$page.frontmatter.footerLayout"/>
     </div>
   </div>
 </template>
